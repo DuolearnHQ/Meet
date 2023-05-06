@@ -1,0 +1,22 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@next/next/no-img-element": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "func-style": "warn"
+  }
+}
