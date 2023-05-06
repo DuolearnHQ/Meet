@@ -32,9 +32,26 @@ It is going to be built with Node.js, WebRTC, Socket.IO, and React.
 
 This project is structured as a monorepo, meaning that it contains multiple packages. The two packages in this repo are `server` and `client`. The `server` package contains the server-side code, which includes the GraphQL API and the Solidity contracts. The `client` package contains the client-side code, which includes the React app.
 
-## Installation
+## Prerequisites
 
-To install and run the project, you need to have Node.js and MongoDB installed on your machine.
+To run this project, you need to have the following installed on your machine:
+
+- Node.js (v18)
+- MongoDB (running locally or on MongoDB Atlas)
+- Redis (running locally or on Redis Labs)
+- Yarn (mandatory)
+
+## Project Structure
+
+The project is structured as a monorepo, meaning that it contains multiple packages. 
+The two packages in this repo are `phoenix` and `centauri`.
+The `phoenix` package contains the server-side code, which includes the GraphQL API. 
+The `centauri` package contains the client-side code, which is the NextJS app.
+
+- `phoenix` - Server-side code
+- `centauri` - Client-side code
+
+## Installation
 
 To install the project and its dependencies, run the following commands:
 
@@ -54,52 +71,25 @@ or
 pnpm install
 ```
 
-## Start Server
+## Start Server (phoenix)
 
 To start the server, run the following commands:
 
-```
-cd packages/server
-npm start
-```
-
-or
 
 ```
-cd packages/server
+cd phoenix
 yarn start
-```
-
-or
-
-```
-cd packages/server
-pnpm start
 ```
 
 The server will start running at http://localhost:4000.
 
-## Start Client
+## Start Client (centauri)
 
 To start the client, run the following commands:
 
 ```
-cd packages/frontend
-npm start
-```
-
-or
-
-```
-cd packages/frontend
+cd centauri
 yarn start
-```
-
-or
-
-```
-cd packages/frontend
-pnpm start
 ```
 
 The client will start running at http://localhost:3000.
