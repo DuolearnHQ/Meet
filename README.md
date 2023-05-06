@@ -2,6 +2,12 @@
 
 Meet is a self-hosted video conferencing service that you can deploy on your own server.
 
+Meet is currently under development.
+
+## Motivation
+
+The motivation behind this project is to create a self-hosted video conferencing service that is easy to deploy and use. The goal is to make it as easy as possible for anyone to deploy their own video conferencing service on their own server.
+
 It is going to be built with Node.js, WebRTC, Socket.IO, and React.
 
 ## Planned Features
